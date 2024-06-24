@@ -109,8 +109,8 @@ body{
 }
 
 .header .logo img{
-    width: 130%;
-    height: 3rem;
+    width: 150%;
+    height: 5rem;
     top: 0;
     left: 0;
 }
@@ -170,6 +170,10 @@ body{
 .home h2{
     color: #fff;
     font-size: 3rem;
+}
+.home h4{
+    color: #fff;
+    font-size: 2rem;
 }
 
 .home .wave{
@@ -564,7 +568,7 @@ body{
 }
 
 .clients img {
-    max-width: 100%;
+    max-width: 50%;
     opacity: 1;
     transition: 0.3s;
     padding: 15px 0;
