@@ -77,26 +77,3 @@ $('.accordion-header').click(function(){
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var overlay = document.createElement('div');
-    overlay.id = 'overlay';
-    document.body.appendChild(overlay);
-
-    var dialog = document.createElement('div');
-    dialog.id = 'maintenance-dialog';
-    dialog.innerHTML = `
-        <h2>Website Under Maintenance</h2>
-        <p>If you want to work on a project with us or for job/internship inquiries, please email us at: <b>infinitywavesinc@gmail.com</b></p>
-        <button class="close-btn">Close</button>
-    `;
-    document.body.appendChild(dialog);
-
-    var closeButton = dialog.querySelector('.close-btn');
-    closeButton.addEventListener('click', function () {
-        dialog.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-
-    dialog.style.display = 'block';
-    overlay.style.display = 'block';
-});

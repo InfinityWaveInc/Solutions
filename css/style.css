@@ -18,6 +18,64 @@ body{
     overflow-x: hidden;
 }
 
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f8f9fa; /* Example background color */
+}
+
+h1, h2, h4 {
+    margin: 10px 0;
+}
+
+.hire-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #007bff; /* Example button color */
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 30px 0 0 30px; /* Rounded left edge */
+    transition: all 0.3s ease;
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hire-btn:hover {
+
+    color: white;
+    text-decoration: none;
+    background-color: #3276be;
+}
+
+
+@keyframes changeText {
+    0% { content: "Add "; }
+    25% { content: "Añadir "; }
+    50% { content: "إضافة "; }
+    75% { content: "Добавить "; }
+    100% { content: "Add "; }
+  }
+  
+  .add-developer {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .add-developer span {
+    animation: changeText 1s infinite;
+  }
+
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
     padding-top: 6rem;
@@ -95,7 +153,7 @@ body{
     background: #00bfff;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,47 +163,50 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
-    position: fixed;
+    background-color: #333; /* Add background to see header clearly */
 }
 
-.header .logo img{
-    width: 150%;
-    height: 5rem;
+.header .logo img {
+    max-width: 200px; /* Increased width */
+    max-height: 4rem; /* Increased height */
+    object-fit: contain; /* Maintain aspect ratio */
     top: 0;
     left: 0;
 }
 
-.header .navbar ul{
+.header .navbar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
-.header .navbar ul li{
+.header .navbar ul li {
     margin: 0 1.5rem;
 }
 
-.header .navbar ul li a{
-    font-size: 2rem;
+.header .navbar ul li a {
+    font-size: 1.5rem; /* Adjusted to fit better */
     color: #fff;
 }
 
-.header .navbar ul li a:hover{
+.header .navbar ul li a:hover {
     color: #00bfff;
-    text-decoration: underline;
 }
 
-.header .logo i{
+.header .logo i {
     padding: 0.5rem;
 }
 
-.header .fa-bars{
+.header .fa-bars {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
     display: none;
 }
+
 
 .home{
     min-height: 100vh;

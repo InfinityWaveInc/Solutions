@@ -17,8 +17,7 @@ html{
 body{
     overflow-x: hidden;
 }
-
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,47 +27,50 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
-    position: fixed;
+    background-color: #333; /* Add background to see header clearly */
 }
 
-.header .logo img{
-    width: 20%;
-    height: 3rem;
+.header .logo img {
+    max-width: 200px; /* Increased width */
+    max-height: 4rem; /* Increased height */
+    object-fit: contain; /* Maintain aspect ratio */
     top: 0;
     left: 0;
 }
 
-.header .navbar ul{
+.header .navbar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
-.header .navbar ul li{
+.header .navbar ul li {
     margin: 0 1.5rem;
 }
 
-.header .navbar ul li a{
-    font-size: 2rem;
+.header .navbar ul li a {
+    font-size: 1.5rem; /* Adjusted to fit better */
     color: #fff;
 }
 
-.header .navbar ul li a:hover{
+.header .navbar ul li a:hover {
     color: #00bfff;
-    text-decoration: underline;
 }
 
-.header .logo i{
+.header .logo i {
     padding: 0.5rem;
 }
 
-.header .fa-bars{
+.header .fa-bars {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
     display: none;
 }
+
 
 .home{
     min-height: 70vh;
