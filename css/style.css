@@ -38,7 +38,7 @@ h1, h2, h4 {
 .hire-btn {
     display: inline-block;
     padding: 15px 40px;
-    background-color: #007bff; /* Example button color */
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
     color: #fff;
     font-size: 20px;
     text-decoration: none;
@@ -48,14 +48,39 @@ h1, h2, h4 {
     margin-top: 20px;
     z-index: 1;
     overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Box shadow */
+}
+
+.hire-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.hire-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .hire-btn:hover {
-
     color: white;
     text-decoration: none;
-    background-color: #3276be;
+    background: linear-gradient(135deg, #0056b3, #003d80); /* Darker gradient on hover */
+    box-shadow: 0 15px 20px rgba(0, 123, 255, 0.4); /* Deeper box shadow on hover */
+    transform: translateY(-3px); /* Slight move up effect */
 }
+
+.hire-btn:active {
+    transform: translateY(1px); /* Press effect */
+}
+
 
 
 @keyframes changeText {
